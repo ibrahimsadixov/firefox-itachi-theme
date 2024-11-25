@@ -1,0 +1,219 @@
+
+
+@-moz-document url(about:home), url(about:newtab) {
+body {
+background: url("image/itachi-uchiha-red-3840x2160-18691.jpg") !important;
+background-size: cover !important;
+background-repeat: no-repeat !important;
+height: 100vh !important;
+background-position: top !important
+}
+.personalizeButtonWrapper{
+display:none !important;
+}
+.logo {
+height: 100px !important;
+width: 100px !important;
+background: image-set(url("image/cynken.png"), url("image/cynken.png")) no-repeat center !important;
+background-size: contain !important;
+border-radius: 50% !important;
+border: 3px solid grey ;
+outline: 3px solid rgba(220,220,220, .5) ;
+box-shadow: 0 0 0 6px rgba(255,255,255, .1)  ;
+}
+.wordmark{
+color:transparent !important;
+background: none !important;
+content: '' !important;
+width: fit-content !important;
+height: 0  !important;
+display:flex!important;
+align-items: center!important;
+justify-content: center!important;
+}
+.wordmark::after{
+color: rgb(220,220,220) !important;
+background: none !important;
+content: 'CYNKEN' !important;
+width: fit-content !important;
+font-weight:bold !important;
+font-size:70px !important;
+font-family: Arial, Helvetica, sans-serif !important;
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Adds a black shadow */
+}
+.search-inner-wrapper{
+background-color: rgba(72, 61, 61, 0.2) !important;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+backdrop-filter: blur(11.3px) !important;
+border-radius: 50px  !important;
+overflow: hidden  !important;
+border: 1px solid whitesmoke  !important;
+min-height: 65px  !important;
+}
+.search-wrapper .search-handoff-button, .search-wrapper input {
+background-color: transparent !important;
+background: transparent !important;
+padding: 0 !important;
+}
+.fake-textbox{
+padding-left:15px !important;
+}
+.fake-editable{
+background-color: transparent !important;
+background: transparent !important;
+}
+.search-handoff-button{
+border-radius: 50px  !important;
+appearance:none !important;
+}
+.fake-textbox{
+color:transparent !important;
+content: '' !important;
+width: fir-content !important;
+height: 0  !important;
+}
+.fake-textbox::after{
+height: 100% !important;
+position:absolute  !important;
+top: 50% !important; 
+transform: translateY(-50%) !important;
+content: 'Search with DuckDuckGo or enter address' !important;
+display: flex  !important;
+align-items: center  !important;
+color: whitesmoke;
+font-size: 14px !important;
+font-weight : bold !important; !important;
+}
+.fake-textbox input{
+background-color: transparent  !important;
+}
+.fake-caret{
+top: 50%  !important;
+transform: translateY(-50%)  !important;
+inset-inline-start: 15px !important;
+}
+.search-wrapper .search-inner-wrapper:active input, .search-wrapper input:focus {
+border: 0px  !important;
+outline: 1px !important;
+}
+.top-site-outer .tile{
+border-radius: 50% !important;
+}
+.top-site-outer .top-site-icon, .rich-icon {
+height: 90%  !important;
+width: 90%  !important;
+left: 50%  !important;
+top: 50%  !important;
+border-radius: 50% !important;
+transform: translate(-50%, -50%) !important;
+background-size:cover !important;
+filter: grayscale(100%);
+transition: .3s;
+}
+.top-site-outer{
+height: 120px !important;
+width: 120px  !important;
+min-height: 120px !important;
+min-width: 120px  !important;
+transition: .3s !important;
+background-color: transparent !important;
+}
+.top-site-inner{
+height: 120px !important;
+width: 120px  !important;
+min-height: 120px !important;
+min-width: 120px  !important;
+transition: .3s !important;
+background-color: transparent !important;
+}
+.top-site-icon{
+background-color: transparent !important;
+}
+.tile{
+border: 3px solid transparent !important;
+background-color:rgba(103, 103, 103, .8) !important;
+box-sizing: content-box !important;
+transition: .3s  !important;
+}
+.rich-icon{
+background-color:transparent !important;
+}
+.icon-wrapper{
+background-color:transparent !important;
+border-radius:50% !important;
+height:100% !important;
+width:100% !important;
+}
+.top-site-outer:hover .tile{
+border: 3px solid rgba(245, 245, 245, .8) !important;
+}
+.top-site-outer:hover .top-site-icon{
+filter: grayscale(50%) !important;
+transition: .3s;
+}
+.top-site-button{
+padding: 0 !important;
+}
+.search-inner-wrapper{
+border: none !important;
+}
+.outer-wrapper{
+padding:0 !important;
+}
+.context-menu-button{
+top: -8px !important;
+background-color: rgba(103, 103, 103, .8)  !important;
+transition: .3s !important;
+}
+main{
+width: 100% !important;
+}
+.top-sites-list{
+display: flex;
+justify-content: center;
+flex-wrap:wrap !important;
+}
+.title{
+font-weight: bold !important;
+font-family: Arial, Helvetica, sans-serif !important;
+}
+
+#alltabs-button {
+display: none !important;
+}
+
+.logo-and-wordmark{
+display:none !important;
+}
+}
+
+#search_form_input{
+font-family: helvetica !important;
+}
+
+.react-results--main article *{
+font-family: helvetica !important;
+}
+.module__header *{
+font-family: helvetica !important;
+}
+
+
+.discovery-stream{
+display: none !important;
+}
+
+.non-collapsible-section{
+margin-bottom: 15vh !important;
+}
+ .search-handoff-button{
+border: 3px solid transparent !important;
+transition: .3s !important;
+}
+
+
+.search-wrapper.fake-focus:not(.search.disabled) .search-handoff-button{
+border: 3px solid #b13630 !important;
+transition: .3s !important;
+}
+
